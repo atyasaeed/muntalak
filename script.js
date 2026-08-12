@@ -8,12 +8,12 @@ function toggleLanguage() {
     } else {
         html.setAttribute('dir', 'rtl');
     }
-    localStorage.setItem('muntalaq_lang', newLang);
+    localStorage.setItem('language', newLang);
 }
 
 // Load saved language preference
 window.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('muntalaq_lang') || 'ar';
+    const savedLang = localStorage.getItem('language') || 'ar';
     document.documentElement.setAttribute('lang', savedLang);
     if (savedLang === 'en') {
         document.documentElement.setAttribute('dir', 'ltr');

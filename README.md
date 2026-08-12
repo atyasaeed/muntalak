@@ -5,54 +5,58 @@ Modern, minimal product studio website built with HTML, CSS, and JavaScript.
 ## Features
 
 ✨ **Bilingual Support** - Arabic (RTL) & English (LTR)
-🎨 **Premium Design** - Minimal, modern, tech studio aesthetic
+🎨 **Optimistic Design** - Bright, warm color scheme with green & amber accents
 📱 **Fully Responsive** - Mobile, tablet, and desktop optimized
 ⚡ **Fast & Lightweight** - No frameworks or dependencies
-🌐 **SEO Friendly** - Clean HTML structure
+🚀 **Professional Logo** - Custom SVG launcher logo
 
-## Sections
+## Color Scheme
 
-- **Hero** - Main value proposition
-- **Featured Work** - Takhta as the first product
-- **Our Approach** - 4-step product development process
-- **Capabilities** - What we do
-- **Brand Statement** - Muntalaq's bigger vision
-- **About** - Who we are
-- **Contact** - Get in touch
-- **Footer** - Quick links
+- **Primary**: #1F1F1F (Warm Gray)
+- **Accent Green**: #00D26F (Vibrant & Fresh)
+- **Accent Warm**: #FFB84D (Optimism & Energy)
+- **Sky Blue**: #64B5F6 (Trust & Clarity)
+
+## Products Showcased
+
+- **Takhta** - Educational platform for teachers
+- **Nakhlh** - Smart palm farm management system
+- **Coming Soon** - Next innovation
+
+## Social & Links
+
+- Email: hello@muntalaq.com
+- LinkedIn: linkedin.com/company/muntalaq
+- WhatsApp: wa.me/201000000000
+- YouToWeb: youtowebapp.com
 
 ## Local Development
 
-1. Clone the repository
-2. Open `index.html` in your browser
-3. No build step needed - it's just static HTML/CSS/JS
+1. Open `index.html` in your browser
+2. No build step needed - it's just static HTML/CSS/JS
 
-## Deployment on Netlify
+## Deployment
 
-### Option 1: Via Git (Recommended)
+### Deploy on Netlify (Recommended)
 
+**Option 1: Drag & Drop (Easiest)**
+1. Go to https://app.netlify.com/drop
+2. Drag and drop the entire folder
+3. Done! Your site is live
+
+**Option 2: Connect GitHub (Best for updates)**
 1. Push this repo to GitHub
-2. Go to [netlify.com](https://netlify.com)
+2. Go to https://app.netlify.com
 3. Click "New site from Git"
-4. Select your GitHub repository
-5. Deploy! 🚀
+4. Select this repository
+5. Click Deploy
 
-### Option 2: Via Drag & Drop
-
-1. Go to [netlify.com](https://netlify.com)
-2. Drag and drop the project folder
-3. It will be live in seconds!
-
-## Language Toggle
-
-Users can switch between Arabic and English using the button in the navbar. Their preference is saved in localStorage.
-
-## Customization
-
-- **Colors**: Update CSS variables in `styles.css`
-- **Content**: Edit text directly in `index.html`
-- **Logo**: Replace the text logo with an image
-- **Images**: Replace placeholder image in Takhta section
+**Option 3: Netlify CLI**
+```bash
+npm install -g netlify-cli
+cd muntalaq_v2
+netlify deploy --prod
+```
 
 ## Browser Support
 
