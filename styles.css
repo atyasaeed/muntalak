@@ -823,12 +823,32 @@ html[lang="en"] .logo-en {
 /* Responsive */
 @media (max-width: 768px) {
     .logo-svg {
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
     }
 
     .logo {
         gap: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .lang-toggle button {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
     }
 
     .hero-title {
@@ -837,15 +857,6 @@ html[lang="en"] .logo-en {
 
     .hero-subtitle {
         font-size: 1rem;
-    }
-
-    .nav-container {
-        padding: 0 1rem;
-    }
-
-    .nav-links {
-        gap: 1rem;
-        font-size: 0.85rem;
     }
 
     .featured-container {
