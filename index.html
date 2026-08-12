@@ -3,180 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منطلق - Muntalaq | المنصات التعليمية المبتكرة</title>
+    <title>منطلق - Muntalaq | نحول الأفكار إلى منتجات رقمية</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="nav-left">
-                <a href="#" class="logo">
-                    <div class="logo-icon">M</div>
-                    <div class="logo-text"><span class="ar-text">منطلق</span><span class="en-text">Muntalaq</span></div>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#products"><span class="ar-text">المنتجات</span><span class="en-text">Products</span></a></li>
-                    <li><a href="#about"><span class="ar-text">مين احنا</span><span class="en-text">About</span></a></li>
-                    <li><a href="#vision"><span class="ar-text">رؤيتنا</span><span class="en-text">Vision</span></a></li>
-                    <li><a href="#contact"><span class="ar-text">التواصل</span><span class="en-text">Contact</span></a></li>
-                </ul>
-            </div>
-            <button class="language-toggle" onclick="toggleLanguage()">
-                <span class="ar-text">EN</span>
-                <span class="en-text">AR</span>
-            </button>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00D26F;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00A340;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M 30 12 L 30 32 M 30 12 L 22 20 M 30 12 L 38 20" stroke="url(#logoGradient)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="30" cy="40" r="14" fill="none" stroke="url(#logoGradient)" stroke-width="1.5"/>
+                    <circle cx="30" cy="40" r="19" fill="none" stroke="url(#logoGradient)" stroke-width="1" opacity="0.5"/>
+                </svg>
+                <span class="logo-text">منطلق</span>
+                <span class="logo-en">Muntalaq</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#work"><span class="ar-text">المنتجات</span><span class="en-text">Work</span></a></li>
+                <li><a href="#approach"><span class="ar-text">طريقتنا</span><span class="en-text">Approach</span></a></li>
+                <li><a href="#about"><span class="ar-text">عن منطلق</span><span class="en-text">About</span></a></li>
+                <li><a href="#contact"><span class="ar-text">تواصل معنا</span><span class="en-text">Contact</span></a></li>
+                <li class="lang-toggle">
+                    <button onclick="toggleLanguage()">
+                        <span class="ar-text">EN</span>
+                        <span class="en-text">AR</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>
-                <span class="ar-text">المنصات التعليمية المبتكرة</span>
-                <span class="en-text">Innovative Educational Platforms</span>
+            <h1 class="hero-title">
+                <span class="ar-text">نحول الأفكار إلى منتجات رقمية حقيقية.</span>
+                <span class="en-text">We turn ideas into real digital products.</span>
             </h1>
-            <p>
-                <span class="ar-text">نحن نؤمن بأن التعليم الجيد هو حق الجميع. منصاتنا تجمع بين التكنولوجيا والإنسانية لخلق تجربة تعليمية فريدة.</span>
-                <span class="en-text">We believe quality education is a right for everyone. Our platforms combine technology with humanity to create a unique educational experience.</span>
+            <p class="hero-subtitle">
+                <span class="ar-text">من الفكرة والمشكلة، للتصميم والتطوير، لحد ما المنتج يبقى موجود وبيستخدمه ناس حقيقية.</span>
+                <span class="en-text">From understanding the problem to design, development, launch, and continuous improvement.</span>
             </p>
-            <a href="#contact" class="cta-button">
-                <span class="ar-text">تواصل معنا الآن</span>
-                <span class="en-text">Contact Us Now</span>
-            </a>
+            <div class="hero-cta">
+                <a href="#work" class="btn btn-primary">
+                    <span class="ar-text">استكشف شغلنا</span>
+                    <span class="en-text">Explore Our Work</span>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span class="ar-text">اعرف إحنا مين</span>
+                    <span class="en-text">About Muntalaq</span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <h2><span class="ar-text">منتجاتنا</span><span class="en-text">Our Products</span></h2>
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-image" style="background: linear-gradient(135deg, #f9f7f4 0%, #fefdfb 100%); display: flex; align-items: center; justify-content: center;">
-                    <!-- Takhta Logo - Exact Design -->
-                    <div style="text-align: center; position: relative;">
-                        <!-- Top Bars -->
-                        <div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;">
-                            <div style="width: 20px; height: 3px; background: #16512E; border-radius: 2px;"></div>
-                            <div style="width: 20px; height: 3px; background: #16512E; border-radius: 2px; margin-top: -3px;"></div>
-                            <div style="width: 20px; height: 3px; background: #16512E; border-radius: 2px;"></div>
-                            <div style="width: 8px;"></div>
-                            <div style="width: 20px; height: 3px; background: #16512E; border-radius: 2px;"></div>
-                            <div style="width: 20px; height: 3px; background: #16512E; border-radius: 2px; margin-top: -3px;"></div>
-                            <div style="width: 20px; height: 3px; background: #16512E; border-radius: 2px;"></div>
-                        </div>
-
-                        <!-- Chair Icon -->
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 8px;">
-                            <!-- Chair back -->
-                            <rect x="18" y="12" width="24" height="28" rx="2" fill="none" stroke="#16512E" stroke-width="2"/>
-                            <!-- Chair seat -->
-                            <rect x="14" y="38" width="32" height="4" fill="#16512E" rx="2"/>
-                            <!-- Chair legs -->
-                            <line x1="18" y1="42" x2="16" y2="54" stroke="#16512E" stroke-width="2" stroke-linecap="round"/>
-                            <line x1="42" y1="42" x2="44" y2="54" stroke="#16512E" stroke-width="2" stroke-linecap="round"/>
+    <!-- Featured Work - Our Products -->
+    <section id="work" class="featured-work">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="ar-text">منتجاتنا</span>
+                <span class="en-text">Our Products</span>
+            </h2>
+            <div class="products-grid">
+                <!-- Takhta Product Card -->
+                <div class="product-card">
+                    <div class="product-status">
+                        <span class="status-badge status-live">
+                            <span class="ar-text">مباشر</span>
+                            <span class="en-text">LIVE</span>
+                        </span>
+                    </div>
+                    <div class="product-logo">
+                        <svg viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="60" y1="25" x2="80" y2="25" stroke="#16512E" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="80" y1="20" x2="100" y2="20" stroke="#16512E" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="100" y1="25" x2="120" y2="25" stroke="#16512E" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="200" y1="25" x2="220" y2="25" stroke="#16512E" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="220" y1="20" x2="240" y2="20" stroke="#16512E" stroke-width="3" stroke-linecap="round"/>
+                            <line x1="240" y1="25" x2="260" y2="25" stroke="#16512E" stroke-width="3" stroke-linecap="round"/>
+                            <rect x="120" y="35" width="40" height="50" rx="4" fill="none" stroke="#16512E" stroke-width="2"/>
+                            <rect x="100" y="75" width="80" height="4" fill="#16512E"/>
+                            <text x="140" y="130" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#16512E">TAKHTA</text>
+                            <line x1="90" y1="155" x2="190" y2="155" stroke="#D98D00" stroke-width="2"/>
+                            <text x="140" y="180" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#65605A">تخته</text>
                         </svg>
-
-                        <!-- Text: TAKHTA -->
-                        <div style="font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; color: #16512E; letter-spacing: 2px; margin-bottom: 4px;">
-                            TAKHTA
-                        </div>
-
-                        <!-- Decorative line -->
-                        <div style="width: 100px; height: 2px; background: #D98D00; margin: 8px auto; border-radius: 1px;"></div>
-
-                        <!-- Arabic text -->
-                        <div style="font-family: 'Arial', sans-serif; font-size: 14px; color: #65605A; letter-spacing: 3px;">
-                            تخته
-                        </div>
+                    </div>
+                    <h3 class="product-title">
+                        <span class="ar-text">تخته</span>
+                        <span class="en-text">Takhta</span>
+                    </h3>
+                    <p class="product-description">
+                        <span class="ar-text">منصة رقمية متكاملة تساعد المدرسين على إدارة العملية التعليمية أونلاين، بداية من إنشاء الحصص والتواصل مع الطلاب وحتى إدارة الدفع والمتابعة.</span>
+                        <span class="en-text">A digital platform that helps teachers manage their online educational workflow, from live classes and student management to payments and follow-up.</span>
+                    </p>
+                    <div class="product-features">
+                        <span class="feature">
+                            <span class="ar-text">حصص حية</span>
+                            <span class="en-text">Live Classes</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">سبورة تفاعلية</span>
+                            <span class="en-text">Interactive Whiteboard</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">إدارة الطلاب</span>
+                            <span class="en-text">Student Management</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">الدفع</span>
+                            <span class="en-text">Payments</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">متابعة الآباء</span>
+                            <span class="en-text">Parent Follow-up</span>
+                        </span>
+                    </div>
+                    <div class="product-cta">
+                        <a href="https://www.takhtah.com/ar" target="_blank" class="btn btn-primary">
+                            <span class="ar-text">اكتشف تخته</span>
+                            <span class="en-text">Visit Takhta</span>
+                        </a>
                     </div>
                 </div>
-                <div class="product-content">
-                    <h3><span class="ar-text">تخته</span><span class="en-text">Takhta</span></h3>
+
+                <!-- Nakhlh Product Card -->
+                <div class="product-card">
+                    <div class="product-status">
+                        <span class="status-badge status-live">
+                            <span class="ar-text">مباشر</span>
+                            <span class="en-text">LIVE</span>
+                        </span>
+                    </div>
+                    <div class="product-logo">
+                        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="85" y="80" width="30" height="50" fill="#8B6F47"/>
+                            <ellipse cx="100" cy="60" rx="50" ry="40" fill="#2D7A3E" transform="rotate(-15 100 60)"/>
+                            <ellipse cx="100" cy="60" rx="50" ry="40" fill="#3A9D5D" transform="rotate(15 100 60)"/>
+                            <ellipse cx="100" cy="60" rx="50" ry="40" fill="#2D7A3E" transform="rotate(-45 100 60)"/>
+                            <ellipse cx="100" cy="60" rx="50" ry="40" fill="#3A9D5D" transform="rotate(45 100 60)"/>
+                            <circle cx="75" cy="45" r="6" fill="#8B4513"/>
+                            <circle cx="90" cy="35" r="6" fill="#A0522D"/>
+                            <circle cx="110" cy="35" r="6" fill="#A0522D"/>
+                            <circle cx="125" cy="45" r="6" fill="#8B4513"/>
+                            <text x="100" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2D7A3E">نخلة</text>
+                        </svg>
+                    </div>
+                    <h3 class="product-title">
+                        <span class="ar-text">نخلة</span>
+                        <span class="en-text">Nakhlh</span>
+                    </h3>
+                    <p class="product-description">
+                        <span class="ar-text">نظام ذكي لإدارة مزارع النخيل، يوفر تتبع شامل للإنتاجية والآفات والرعاية، مع QR code لكل دور في المزرعة والتحليلات المتقدمة.</span>
+                        <span class="en-text">An intelligent palm farm management system with comprehensive tracking, pest detection, QR codes for each section, and advanced analytics.</span>
+                    </p>
+                    <div class="product-features">
+                        <span class="feature">
+                            <span class="ar-text">إدارة المزرعة</span>
+                            <span class="en-text">Farm Management</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">QR Tracking</span>
+                            <span class="en-text">QR Tracking</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">كشف الآفات</span>
+                            <span class="en-text">Pest Detection</span>
+                        </span>
+                        <span class="feature">
+                            <span class="ar-text">التحليلات</span>
+                            <span class="en-text">Analytics</span>
+                        </span>
+                    </div>
+                    <div class="product-cta">
+                        <a href="https://nakhlh.com" target="_blank" class="btn btn-primary">
+                            <span class="ar-text">اكتشف نخلة</span>
+                            <span class="en-text">Visit Nakhlh</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Card -->
+                <div class="product-card coming-soon">
+                    <div class="product-status">
+                        <span class="status-badge status-coming">
+                            <span class="ar-text">قريباً</span>
+                            <span class="en-text">COMING SOON</span>
+                        </span>
+                    </div>
+                    <div class="product-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="10" y="10" width="80" height="80" rx="8"/>
+                            <circle cx="50" cy="35" r="8"/>
+                            <path d="M20 80 L35 55 L50 70 L80 20"/>
+                        </svg>
+                    </div>
+                    <h3 class="product-title">
+                        <span class="ar-text">منتج جديد</span>
+                        <span class="en-text">New Product</span>
+                    </h3>
+                    <p class="product-description">
+                        <span class="ar-text">نعمل على شيء مميز. تابعنا للتعرف على ما يأتي قريباً.</span>
+                        <span class="en-text">We're working on something special. Stay tuned for what's coming next.</span>
+                    </p>
+                    <div class="product-features opacity-50">
+                        <span class="feature">
+                            <span class="ar-text">نحت المزيد</span>
+                            <span class="en-text">Building More</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section id="approach" class="approach">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="ar-text">مش بنبدأ بالحل. بنبدأ بالمشكلة.</span>
+                <span class="en-text">We do not start with the solution. We start with the problem.</span>
+            </h2>
+            <div class="approach-grid">
+                <div class="approach-step">
+                    <div class="step-number">01</div>
+                    <h3>
+                        <span class="ar-text">نلاحظ</span>
+                        <span class="en-text">Discover</span>
+                    </h3>
                     <p>
-                        <span class="ar-text">منصة تعليمية تفاعلية توفر دروسًا حية مع سبورة رقمية وتواصل مباشر بين الطلاب والمدرسين.</span>
-                        <span class="en-text">An interactive educational platform offering live lessons with a digital whiteboard and direct communication between students and teachers.</span>
+                        <span class="ar-text">نبحث عن مشكلة حقيقية تستحق الحل.</span>
+                        <span class="en-text">Find a real problem worth solving.</span>
+                    </p>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">02</div>
+                    <h3>
+                        <span class="ar-text">نفهم</span>
+                        <span class="en-text">Understand</span>
+                    </h3>
+                    <p>
+                        <span class="ar-text">نفهم المستخدم، احتياجاته، والسياق الحقيقي للمشكلة.</span>
+                        <span class="en-text">Understand the user, context, and actual needs.</span>
+                    </p>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">03</div>
+                    <h3>
+                        <span class="ar-text">نبني</span>
+                        <span class="en-text">Build</span>
+                    </h3>
+                    <p>
+                        <span class="ar-text">نحول الفكرة إلى تجربة ومنتج قابل للاستخدام.</span>
+                        <span class="en-text">Turn the idea into a usable digital product.</span>
+                    </p>
+                </div>
+                <div class="approach-step">
+                    <div class="step-number">04</div>
+                    <h3>
+                        <span class="ar-text">نطلق ونتعلم</span>
+                        <span class="en-text">Launch & Learn</span>
+                    </h3>
+                    <p>
+                        <span class="ar-text">نطلق، نقيس، نتعلم، ونطور المنتج باستمرار.</span>
+                        <span class="en-text">Launch, measure, learn, and continuously improve.</span>
                     </p>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">🎯</div>
-                <div class="product-content">
-                    <h3><span class="ar-text">الفصول الذكية</span><span class="en-text">Smart Classrooms</span></h3>
+        </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="capabilities">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="ar-text">قدراتنا</span>
+                <span class="en-text">What We Do</span>
+            </h2>
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <h3>
+                        <span class="ar-text">تطوير المنتجات</span>
+                        <span class="en-text">Product Development</span>
+                    </h3>
                     <p>
-                        <span class="ar-text">إدارة فعالة للفصول الدراسية مع تتبع شامل لتقدم الطلاب وتقييم الأداء الحقيقي.</span>
-                        <span class="en-text">Efficient classroom management with comprehensive student progress tracking and real-time performance assessment.</span>
+                        <span class="ar-text">من الفكرة للمنتج الحقيقي اللي بيستخدمه ناس.</span>
+                        <span class="en-text">From idea to real products that people use.</span>
+                    </p>
+                </div>
+                <div class="capability-card">
+                    <h3>
+                        <span class="ar-text">تطبيقات الويب</span>
+                        <span class="en-text">Web & Applications</span>
+                    </h3>
+                    <p>
+                        <span class="ar-text">نبني تجارب رقمية سريعة وقابلة للتوسع.</span>
+                        <span class="en-text">Fast and scalable digital experiences.</span>
+                    </p>
+                </div>
+                <div class="capability-card">
+                    <h3>
+                        <span class="ar-text">تصميم المنتجات</span>
+                        <span class="en-text">Product Design</span>
+                    </h3>
+                    <p>
+                        <span class="ar-text">UX/UI مبني على الاستخدام الفعلي وليس الشكل فقط.</span>
+                        <span class="en-text">Design based on real usage, not just looks.</span>
+                    </p>
+                </div>
+                <div class="capability-card">
+                    <h3>
+                        <span class="ar-text">التقنية</span>
+                        <span class="en-text">Technology</span>
+                    </h3>
+                    <p>
+                        <span class="ar-text">نختار ونبني التقنية التي تخدم المنتج، وليس العكس.</span>
+                        <span class="en-text">Technology that serves the product, not the other way around.</span>
                     </p>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">📊</div>
-                <div class="product-content">
-                    <h3><span class="ar-text">تحليل الأداء</span><span class="en-text">Performance Analytics</span></h3>
-                    <p>
-                        <span class="ar-text">أدوات متقدمة لتحليل بيانات الطلاب واكتشاف المتعثرين وتقديم التوصيات المخصصة.</span>
-                        <span class="en-text">Advanced tools for analyzing student data, identifying struggling learners, and providing personalized recommendations.</span>
-                    </p>
-                </div>
-            </div>
+        </div>
+    </section>
+
+    <!-- Brand Statement -->
+    <section class="brand-statement">
+        <div class="section-container">
+            <h2>
+                <span class="ar-text">منطلق مش مشروع واحد.</span>
+                <span class="en-text">Muntalaq is bigger than one product.</span>
+            </h2>
+            <p>
+                <span class="ar-text">بدأنا بتخته، لكن رؤيتنا أكبر من منتج واحد. بنبحث عن مشاكل تستحق الحل، ونحوّل الحلول إلى منتجات حقيقية.</span>
+                <span class="en-text">Takhta was one of our first steps, but our vision goes beyond a single product. We look for problems worth solving and turn solutions into real digital products.</span>
+            </p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2><span class="ar-text">من نحن</span><span class="en-text">About Us</span></h2>
-        <div class="about">
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2>
+                <span class="ar-text">إحنا منطلق.</span>
+                <span class="en-text">We are Muntalaq.</span>
+            </h2>
             <div class="about-content">
-                <h3><span class="ar-text">رحلتنا</span><span class="en-text">Our Journey</span></h3>
                 <p>
-                    <span class="ar-text">نحن فريق متخصص في تطوير حلول تعليمية مبتكرة. بدأنا برؤية واضحة: جعل التعليم الجيد في متناول الجميع.</span>
-                    <span class="en-text">We are a specialized team in developing innovative educational solutions. We started with a clear vision: making quality education accessible to everyone.</span>
+                    <span class="ar-text">مجموعة شباب بنحب نبني حاجات فعلًا، مش مجرد أفكار على الورق.</span>
+                    <span class="en-text">A team that prefers building real things over keeping ideas on paper.</span>
                 </p>
                 <p>
-                    <span class="ar-text">على مدى السنوات الماضية، طورنا منصات تجمع بين أحدث التقنيات والفهم العميق لاحتياجات العملية التعليمية في العالم العربي.</span>
-                    <span class="en-text">Over the years, we have developed platforms that combine cutting-edge technology with deep understanding of educational needs in the Arab world.</span>
+                    <span class="ar-text">بنبدأ من مشكلة، نفهمها، نصمم الحل، نبني المنتج، نجربه، ونطوره.</span>
+                    <span class="en-text">We start with a problem, understand it, design the solution, build the product, test it, and keep improving it.</span>
                 </p>
                 <p>
-                    <span class="ar-text">اليوم، نخدم آلاف الطلاب والمعلمين حول الوطن العربي، ونستمر في الابتكار والتطوير.</span>
-                    <span class="en-text">Today, we serve thousands of students and teachers across the Arab world, and we continue to innovate and develop.</span>
-                </p>
-            </div>
-            <div class="about-image">🌟</div>
-        </div>
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision" class="vision">
-        <h2><span class="ar-text">رؤيتنا</span><span class="en-text">Our Vision</span></h2>
-        <div class="vision-grid">
-            <div class="vision-card">
-                <h3>
-                    <span class="ar-text">التكنولوجيا الإنسانية</span>
-                    <span class="en-text">Human-Centered Technology</span>
-                </h3>
-                <p>
-                    <span class="ar-text">نؤمن بأن التكنولوجيا يجب أن تخدم الإنسان، وليس العكس. كل أداة نطورها تُصمم بالطالب والمعلم في الاعتبار.</span>
-                    <span class="en-text">We believe technology should serve people, not the other way around. Every tool we develop is designed with students and teachers in mind.</span>
-                </p>
-            </div>
-            <div class="vision-card">
-                <h3>
-                    <span class="ar-text">العدالة التعليمية</span>
-                    <span class="en-text">Educational Equity</span>
-                </h3>
-                <p>
-                    <span class="ar-text">لا يجب أن يحدد المال جودة التعليم. نعمل على توفير تعليم عالي الجودة بأسعار معقولة للجميع.</span>
-                    <span class="en-text">Money should not determine the quality of education. We work to provide high-quality education at affordable prices for everyone.</span>
-                </p>
-            </div>
-            <div class="vision-card">
-                <h3>
-                    <span class="ar-text">الابتكار المستمر</span>
-                    <span class="en-text">Continuous Innovation</span>
-                </h3>
-                <p>
-                    <span class="ar-text">السوق التعليمي يتغير بسرعة. نبقى في المقدمة من خلال البحث المستمر والاستماع الفعال لمستخدمينا.</span>
-                    <span class="en-text">The education market changes rapidly. We stay ahead through continuous research and active listening to our users.</span>
+                    <span class="ar-text">تخته كانت واحدة من أول خطواتنا، واللي جاي أكتر.</span>
+                    <span class="en-text">Takhta was one of our first steps. More is coming.</span>
                 </p>
             </div>
         </div>
@@ -184,59 +371,69 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2><span class="ar-text">التواصل معنا</span><span class="en-text">Contact Us</span></h2>
-        <div class="contact-content">
-            <p>
-                <span class="ar-text">نحن هنا للإجابة على أسئلتك ومساعدتك على البدء مع منصاتنا.</span>
-                <span class="en-text">We are here to answer your questions and help you get started with our platforms.</span>
+        <div class="section-container">
+            <h2>
+                <span class="ar-text">عندك فكرة تستحق البناء؟</span>
+                <span class="en-text">Have an idea worth building?</span>
+            </h2>
+            <p class="contact-subtitle">
+                <span class="ar-text">خلينا نتكلم.</span>
+                <span class="en-text">Let's talk.</span>
             </p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong><span class="ar-text">البريد الإلكتروني</span><span class="en-text">Email</span></strong>
-                    <p><a href="mailto:info@muntalaq.com" style="color: var(--gold); text-decoration: none;">info@muntalaq.com</a></p>
-                </div>
-                <div class="contact-item">
-                    <strong><span class="ar-text">الهاتف</span><span class="en-text">Phone</span></strong>
-                    <p><a href="tel:+201000000000" style="color: var(--gold); text-decoration: none;">+201000000000</a></p>
-                </div>
-                <div class="contact-item">
-                    <strong><span class="ar-text">الموقع</span><span class="en-text">Location</span></strong>
-                    <p><span class="ar-text">القاهرة، مصر</span><span class="en-text">Cairo, Egypt</span></p>
-                </div>
+            <div class="contact-links">
+                <a href="mailto:hello@muntalaq.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span class="ar-text">البريد الإلكتروني</span>
+                    <span class="en-text">Email</span>
+                </a>
+                <a href="https://linkedin.com/company/muntalaq" target="_blank" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.37c0-.92.64-1.44 1.585-1.44 1.05 0 1.635.67 1.635 1.55v4.26zM6.5 8.13a1.56 1.56 0 1 0 0-3.12 1.56 1.56 0 0 0 0 3.12z"/>
+                    </svg>
+                    <span class="ar-text">LinkedIn</span>
+                    <span class="en-text">LinkedIn</span>
+                </a>
+                <a href="https://wa.me/201000000000" target="_blank" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    </svg>
+                    <span class="ar-text">WhatsApp</span>
+                    <span class="en-text">WhatsApp</span>
+                </a>
+                <a href="https://youtowebapp.com" target="_blank" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <polygon points="9,8 9,16 17,12" fill="currentColor"/>
+                    </svg>
+                    <span class="ar-text">YouToWeb</span>
+                    <span class="en-text">YouToWeb</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="social-links">
-            <a href="https://facebook.com/muntalaq" class="social-link" title="Facebook" target="_blank" rel="noopener noreferrer">
-                <img src="assets/facebook.svg" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://twitter.com/muntalaq" class="social-link" title="Twitter/X" target="_blank" rel="noopener noreferrer">
-                <img src="assets/twitter.svg" alt="Twitter" class="social-icon">
-            </a>
-            <a href="https://instagram.com/muntalaq" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
-                <img src="assets/instagram.svg" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://linkedin.com/company/muntalaq" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <img src="assets/linkedin.svg" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="https://youtube.com/@muntalaq" class="social-link" title="YouTube" target="_blank" rel="noopener noreferrer">
-                <img src="assets/youtube.svg" alt="YouTube" class="social-icon">
-            </a>
-            <a href="https://tiktok.com/@muntalaq" class="social-link" title="TikTok" target="_blank" rel="noopener noreferrer">
-                <img src="assets/tiktok.svg" alt="TikTok" class="social-icon">
-            </a>
-            <a href="https://telegram.me/muntalaq" class="social-link" title="Telegram" target="_blank" rel="noopener noreferrer">
-                <img src="assets/telegram.svg" alt="Telegram" class="social-icon">
-            </a>
-            <a href="https://wa.me/201000000000" class="social-link" title="WhatsApp" target="_blank" rel="noopener noreferrer">
-                <img src="assets/whatsapp.svg" alt="WhatsApp" class="social-icon">
-            </a>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>منطلق / Muntalaq</h3>
+                    <p><span class="ar-text">نبني منتجات تستحق أن تبدأ.</span><span class="en-text">We build products worth starting.</span></p>
+                </div>
+                <div class="footer-links">
+                    <a href="#work"><span class="ar-text">المنتجات</span><span class="en-text">Work</span></a>
+                    <a href="#about"><span class="ar-text">عن منطلق</span><span class="en-text">About</span></a>
+                    <a href="#contact"><span class="ar-text">تواصل</span><span class="en-text">Contact</span></a>
+                    <a href="https://takhta.com" target="_blank">Takhta ↗</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><span class="ar-text">القاهرة، مصر</span><span class="en-text">Cairo, Egypt</span></p>
+                <p>&copy; 2026 <span class="ar-text">منطلق</span><span class="en-text">Muntalaq</span></p>
+            </div>
         </div>
-        <p>&copy; 2026 <span class="ar-text">منطلق - جميع الحقوق محفوظة</span><span class="en-text">Muntalaq - All Rights Reserved</span></p>
-        <p style="font-size: 0.85rem; margin-top: 1rem;"><span class="ar-text">نحن نطور حلولاً تعليمية مبتكرة للعالم العربي</span><span class="en-text">We develop innovative educational solutions for the Arab world</span></p>
     </footer>
 
     <script src="script.js"></script>
